@@ -1,0 +1,12 @@
+.http-404 {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    color: #F2DE1E;
+}
+
+.http-404 h2 {
+    font-family: 'Poller One', cursive;
+    font-size: 14em;
+    
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+body {
+  background: #3F3639;
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #70989D; 
+}
+
+nav {
+  display: flex;
+  margin: 0 auto 60px;
+  gap: 10px;
+  align-items: center;
+}
+
+nav h1 {
+  margin-right: auto;
+  color: #F2DE1E;
+  font-family: 'Poller One', cursive;
+}
+
+nav a {
+  color: goldenrod;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: white;
+  background: #494546;  
+}
+
+h2 {
+  color: #F2DE1E;
+}

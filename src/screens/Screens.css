@@ -1,0 +1,14 @@
+button {
+    position: relative;
+    background: #3F75AC;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #F2DE1E;
+    font-size: 1.1rem;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    min-width: 200px;
+    cursor: pointer;
+    color: #F2DE1E;
+}
