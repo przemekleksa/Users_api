@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
-import { getPersonDetails } from '../../store/people/actions'
-import { selectPerson } from '../../store/people/selectors'
+import { getUserDetails } from '../../store/people/actions'
+import { selectUser } from '../../store/people/selectors'
 
 const Details = () => {
     const { id } = useParams()
     const dispatch = useDispatch()
-    const person = useSelector(selectPerson)
+    const person = useSelector(selectUser)
     
-    useEffect(() => {
+    useEffect(() => { 
         if (id) {
-            dispatch(getPersonDetails(id))
+            dispatch(getUserDetails(id))
         }
     }, [id, dispatch])
 

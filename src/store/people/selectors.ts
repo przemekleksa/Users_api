@@ -1,19 +1,19 @@
-export const selectPeople = (state: any) => {
-    return state.people.people
+export const selectUsers = (state: any) => {
+    return state.users.data
 }
 
-export const selectPerson = (state: any) => {
-    return state.people.detailedPerson
+export const selectUser = (state: any) => {
+    return state.users.detailedPerson
 }
 
-export const selectIsLoadingPeople = (state: any) => {
-    return state.people.status === 'PENDING'
+export const selectIsLoadingUsers = (state: any) => {
+    return state.users.status === 'PENDING'
 }
 
-export const selectIsRejectedPeople = (state: any) => {
-    return state.people.status === 'REJECTED'
+export const selectIsRejectedUsers = (state: any) => {
+    return state.users.status === 'REJECTED'
 }
 
-export const selectIsResetPeople = (state: any) => {
-    return state.people.reset === true
+export const selectIsResetUsers = (state: any) => {
+    return state.users.reset === true
 }

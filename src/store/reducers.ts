@@ -1,16 +1,16 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { peopleReducer } from "./people/reducer"
-import { planetReducer } from "./planets/reducer";
-import { filmsReducer } from "./films/reducer";
-import { vehiclesReducer } from "./vehicles/reducer";
+import { usersReducer } from "./people/reducer"
+// import { planetReducer } from "./planets/reducer";
+// import { filmsReducer } from "./films/reducer";
+// import { vehiclesReducer } from "./vehicles/reducer";
 
 
 
 const rootReducer = combineReducers({
-    people: peopleReducer,
-    planets: planetReducer,
-    films: filmsReducer,
-    vehicles: vehiclesReducer
+    users: usersReducer,
+    // planets: planetReducer,
+    // films: filmsReducer,
+    // vehicles: vehiclesReducer
 })
 
 function initStore() {

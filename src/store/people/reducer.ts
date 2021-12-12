@@ -1,8 +1,9 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { getPeople, getPersonDetails, resetPeople } from "./actions";
+import { getUsers, getUserDetails, resetUsers} from "./actions";
+
 
 const initState = {
-    people:[],
+    data: [],
     page: 1,
     detailedPerson: {},
     errorInfo: '',
@@ -10,16 +11,16 @@ const initState = {
     status: 'IDLE'
 }
 
-export const peopleReducer = createReducer(initState, builder => {
+export const usersReducer = createReducer(initState, builder => {
     builder
-        .addCase(getPeople.fulfilled, (state, { payload } ) => {
-            state.people = payload.data.results
+        .addCase(getUsers.fulfilled, (state, { payload } ) => {
+            state.data = payload.data.data
         })
-        .addCase(getPersonDetails.fulfilled, (state, { payload: { data } }) => {
-            state.detailedPerson = data
+        .addCase(getUserDetails.fulfilled, (state, { payload: { data } }) => {
+            state.detailedPerson = data.data
         })
-        .addCase(resetPeople, state => {
-            state.people = initState.people;
+        .addCase(resetUsers, state => {
+            state.data = initState.data;
             state.reset = true
         })
         .addMatcher((action) => action.type.endsWith('/pending'), state => {
