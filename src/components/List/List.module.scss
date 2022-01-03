@@ -2,12 +2,12 @@
     padding: 0;
 }
 
-.sw-el-link {
+.element-link {
     color: #70989D;
     text-decoration: none;
 }
 
-.sw-el {
+.element {
     border: 1px solid #B64519;
     margin: 20px auto;
     padding: 15px;
@@ -18,7 +18,7 @@
     text-decoration: none;
 }
 
-.sw-el:hover {
+.element:hover {
     cursor: pointer;
     background: #282224;
     transform: scale(1.1);
@@ -31,4 +31,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.container {
+  
+}
+.del-btn {
+    background: #3F75AC;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #F2DE1E;
+    font-size: 1.1rem;
+    // left: 10%;
+    // margin-right: -50%;
+    // transform: translate(-50%, -50%);
+    min-width: 200px;
+    cursor: pointer;
+    color: #F2DE1E;
 }
